@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crypto Prices — Live Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Crypto Prices</h1>
+      <p class="subtitle">Live USD prices using CoinGecko API (no key)</p>
+    </header>
+
+    <section class="controls">
+      <label for="coins">Choose tokens:</label>
+      <select id="coins" multiple size="6"></select>
+      <div class="buttons">
+        <button id="refresh">Refresh</button>
+        <button id="autoToggle">Start Auto (30s)</button>
+      </div>
+    </section>
+
+    <section id="results" class="results">
+      <p class="hint">Select tokens above and click <strong>Refresh</strong>.</p>
+    </section>
+
+    <footer>
+      <small>Powered by <a href="https://www.coingecko.com/en/api" target="_blank" rel="noreferrer">CoinGecko API</a></small>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
